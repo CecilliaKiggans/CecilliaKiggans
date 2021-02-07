@@ -1,0 +1,74 @@
+.task-3-1.container {
+  display: grid;
+  height: 100vh;
+  background-color: antiquewhite;
+  grid-template-rows: auto auto 1fr auto auto auto;
+  
+}
+
+@media (min-width: 720px) {
+  .task-3-1.container {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto auto 1fr auto;
+    }
+  
+
+  .task-3-1 .header {
+    grid-column: 1 / 13;
+  }
+
+  .task-3-1 .navigation {
+    grid-column: 1 / 13;
+    
+  }
+
+  .task-3-1 .main {
+    grid-column: 3 / 13;
+  }
+
+  .task-3-1 .sidebar {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+
+  .task-3-1 .ads {
+    grid-column: 1 / 3;
+  }
+
+  .task-3-1 .footer {
+    grid-column: 3 / 13;
+  }
+}
+
+@media (min-width: 1020px) {
+  .task-3-1 .header {
+    grid-column: 1 / 13;
+  }
+
+  .task-3-1 .navigation {
+    grid-column: 1 / 13;
+  }
+
+  .task-3-1 .main {
+    grid-column: 3 / 11;
+  }
+
+  .task-3-1 .sidebar {
+    grid-column:1 / 3;
+    grid-row: 3 / 5;
+  }
+
+  .task-3-1 .ads {
+    grid-column: 11 / 13;
+    grid-row: 3 / 5;
+  }
+
+  .task-3-1 .footer {
+    grid-column: 1 / 13;
+  }
+}
+#home {
+  background-image: url(./imgs/CeceTree.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
